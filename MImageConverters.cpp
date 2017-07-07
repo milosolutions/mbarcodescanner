@@ -20,7 +20,7 @@
 /*
  * Contains implemenation of framebuffer conversion routines.
  */
-#include "ImageConverters.h"
+#include "MImageConverters.h"
 
 namespace android {
 static void _YUV420SToRGB565(const uint8_t* Y,

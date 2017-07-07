@@ -1,4 +1,4 @@
-QT *= concurrent
+QT *= concurrent multimedia
 CONFIG += c++11
 DEFINES *= QT_USE_QSTRINGBUILDER
 
