@@ -2,7 +2,7 @@
 
 Milo Code DB main ([online](https://qtdocs.milosolutions.com/milo-code-db/main/) | [offline](\ref milodatabasemain))
 
-BarcodeScanner is used for scanning barcodes and QR codes. It's based on [QZXing](https://github.com/ftylitak/qzxing) library.
+MBarcodeScanner is used for scanning barcodes and QR codes. It's based on [QZXing](https://github.com/ftylitak/qzxing) library.
 
 Supports barcode decoding for the following types: 
 
@@ -22,7 +22,7 @@ Supports barcode decoding for the following types:
 
 **How to use:**
 
-BarcodeScanner may be used in one of two configurations:
+MBarcodeScanner may be used in one of two configurations:
 
 1. **Just barcode scanning** - in this configuration you are able to scan barcodes from camera output. 
 2. **Barcode scanning with region detection** - in this configuration you are able to scan barcodes from camera output and also see barcode region on screen.
