@@ -5,13 +5,13 @@
 
 DOXYFILE_ENCODING = UTF-8
 
-PROJECT_NAME = BarcodeScanner
+PROJECT_NAME = MBarcodeScanner
 PROJECT_NUMBER = 0.0.1
-PROJECT_BRIEF = "BarcodeScanner - helper class for scanning barcodes in Milo projects"
+PROJECT_BRIEF = "MBarcodeScanner - helper class for scanning barcodes in Milo projects"
 
 OUTPUT_DIRECTORY = doc/
 
-INPUT = BarcodeCaptureFilter.h BarcodeCaptureFilter.cpp AUTHORS.md README.md how_to_build.md camera_tricks.md example/
+INPUT = MBarcodeCaptureFilter.h MBarcodeCaptureFilter.cpp AUTHORS.md README.md how_to_build.md camera_tricks.md example/
 #EXCLUDE_PATTERNS = */something/*
 USE_MDFILE_AS_MAINPAGE = README.md
 
@@ -24,7 +24,7 @@ EXTRACT_STATIC = YES
 
 DISTRIBUTE_GROUP_DOC = YES
 
-GENERATE_TAGFILE = barcodescanner.doxytag
+GENERATE_TAGFILE = mbarcodescanner.doxytag
 GENERATE_HTML = YES
 GENERATE_LATEX = NO
 GENERATE_RTF = NO
@@ -50,5 +50,5 @@ EXTERNAL_PAGES = YES
 
 HAVE_DOT = NO
 
-TAGFILES = ../../../../milocodedatabase.doxytag=../../../../../../doc/html
+TAGFILES = ../../../../../mcdb-installer.doxytag=../../../../../doc/html
 
