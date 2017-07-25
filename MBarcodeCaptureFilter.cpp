@@ -21,14 +21,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 *******************************************************************************/
 
-#include "BarcodeCaptureFilter.h"
+#include "MBarcodeCaptureFilter.h"
 
 #include <QtConcurrentRun>
 
 #include "QZXing.h"
 
 #ifndef Q_OS_ANDROID
-#   include "ImageConverters.h"
+#   include "MImageConverters.h"
 #endif
 
 /*!

@@ -1,6 +1,6 @@
 QT += core gui widgets qml quick multimedia concurrent
 
-include(../barcode_scanner.pri)
+include(../mbarcodescanner.pri)
 
 TARGET = barcode_scanner
 
