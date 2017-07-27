@@ -481,8 +481,8 @@ div.qindex, div.navtab {
   padding-bottom: 6px;
   color: #CCC; }
 
-.contents .textblock * {
-  font-weight: inherit !important; }
+/*.contents .textblock * {
+  font-weight: inherit !important; }*/
 
 a.el {
   color: #B34C0F; }
