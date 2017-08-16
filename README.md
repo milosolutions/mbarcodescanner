@@ -1,6 +1,6 @@
 [TOC]
 
-Milo Code DB main ([online](https://qtdocs.milosolutions.com/milo-code-db/main/) | [offline](\ref milodatabasemain))
+Milo Code DB main ([online](https://docs.milosolutions.com/milo-code-db/main/) | [offline](\ref milodatabasemain))
 
 # Getting Started
 
@@ -32,7 +32,7 @@ MBarcodeScanner may be used in one of two configurations:
 ## Barcode scanning
 
 To use just barcode scanning (**configuration 1**) you should do following:
-1. Build QZXing library on target platform (see \ref how_to_build ([online version](https://qtdocs.milosolutions.com/milo-code-db/mbarcodescanner/how_to_build.html))). Also you can use prebuilt [QZXing](https://seafile.milosolutions.com/d/248e22bd10/) library and headers.
+1. Build QZXing library on target platform (see \ref how_to_build ([online version](https://docs.milosolutions.com/milo-code-db/mbarcodescanner/how_to_build.html))). Also you can use prebuilt [QZXing](https://seafile.milosolutions.com/d/248e22bd10/) library and headers.
 2. Specify paths to headers and libraries in *.pro file.
 ```
 	INCLUDEPATH += # path to qzxing headers
@@ -54,7 +54,7 @@ To use barcode scanning with region detection (**configuration 2**) you should d
 ```
 4. Compile and enjoy.
 
-You can find some tricks with camera (see \ref camera_tricks ([online version](https://qtdocs.milosolutions.com/milo-code-db/mbarcodescanner/camera_tricks.html))).
+You can find some tricks with camera (see \ref camera_tricks ([online version](https://docs.milosolutions.com/milo-code-db/mbarcodescanner/camera_tricks.html))).
 
 For example usage, see main.cpp file. This project is fully docummented - please check doxygen docs or see the comments directly in the source file(s).
 
