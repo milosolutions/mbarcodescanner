@@ -6,7 +6,7 @@
 DOXYFILE_ENCODING = UTF-8
 
 PROJECT_NAME = MBarcodeScanner
-PROJECT_NUMBER = 0.0.1
+PROJECT_NUMBER = 1.0
 PROJECT_BRIEF = "MBarcodeScanner - helper class for scanning barcodes in Milo projects"
 
 OUTPUT_DIRECTORY = doc/
