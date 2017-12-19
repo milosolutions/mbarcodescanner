@@ -72,9 +72,12 @@ This project is licensed under the MIT License - see the LICENSE-MiloCodeDB.txt 
 Here are some examples showing barcode scanner:
 
 <img src="BarCodeScannerAndroidExample1.png" alt="Basic barcode detection" style="width: 400px;"/>
+Basic barcode detection
 
 
 <img src="BarCodeScannerAndroidExample2.png" alt="Basic QR code detection" style="width: 400px;"/>
+Basic QR code detection
 
 
 <img src="BarCodeScannerDesktopWithRegionExample.png" alt="Barcode detection, with region detection" style="width: 650px;"/>
+Barcode detection, with region detection
