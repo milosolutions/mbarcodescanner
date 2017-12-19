@@ -4,9 +4,12 @@ Milo Code DB main ([online](https://docs.milosolutions.com/milo-code-db/main/) |
 
 [Source code](https://github.com/milosolutions/mbarcodescanner)
 
+![Barcode detection with region](doc/img/BarCodeScannerDesktopWithRegionExample.png "Barcode scanner at work")
+
 # Getting Started
 
-MBarcodeScanner is used for scanning barcodes and QR codes. It's based on [QZXing](https://github.com/ftylitak/qzxing) library.
+MBarcodeScanner is used for scanning barcodes and QR codes. It's based on [QZXing](https://github.com/ftylitak/qzxing) library. It works cross-platform on
+all OSes supported by Qt.
 
 Supports barcode decoding for the following types: 
 
@@ -63,3 +66,15 @@ For example usage, see main.cpp file. This project is fully docummented - please
 # License
 
 This project is licensed under the MIT License - see the LICENSE-MiloCodeDB.txt file for details
+
+# Gallery
+
+Here are some examples showing barcode scanner:
+
+<img src="BarCodeScannerAndroidExample1.png" alt="Basic barcode detection" style="width: 400px;"/>
+
+
+<img src="BarCodeScannerAndroidExample2.png" alt="Basic QR code detection" style="width: 400px;"/>
+
+
+<img src="BarCodeScannerDesktopWithRegionExample.png" alt="Barcode detection, with region detection" style="width: 650px;"/>
