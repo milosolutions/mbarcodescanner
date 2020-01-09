@@ -88,7 +88,8 @@ function build_android() {
     rm -rf $PROJECT_ANDROID_RELEASE_BUILD
     mkdir -p $PROJECT_ANDROID_RELEASE_BUILD
     cd $PROJECT_ANDROID_RELEASE_BUILD
-    $QT_BIN_ANDROID/qmake $PRO_FILE -r -spec android-g++ $CONFIG_OPTIONS
+    #$QT_BIN_ANDROID/qmake $PRO_FILE -r -spec android-g++ $CONFIG_OPTIONS
+    $QT_BIN_ANDROID/qmake $PRO_FILE -r $CONFIG_OPTIONS
     make -j4
     cd ..
 }
