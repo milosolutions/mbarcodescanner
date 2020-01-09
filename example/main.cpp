@@ -25,7 +25,7 @@ SOFTWARE.
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-
+#include <QtDebug>
 #include "../MBarcodeCaptureFilter.h"
 
 //! Example BarcodeScanner usage
@@ -36,12 +36,18 @@ int main(int argc, char *argv[])
 #ifdef DRAW_REGION
     qRegisterMetaType<QVector<QPointF> >("QVector<QPointF>");
 #endif
-    qmlRegisterType<BarcodeCaptureFilter>("BarcodeCaptureFilter", 1, 0, "BarcodeCaptureFilter");
+    if (qmlRegisterType<BarcodeCaptureFilter>("BarcodeCaptureFilter", 1, 0,
+                                              "MBarcodeCaptureFilter") == -1) {
+        qWarning() << "Unable to register BarcodeCaptureFilter type!";
+        return -1;
+    }
     QQmlApplicationEngine engine;
     engine.load(QUrl("qrc:/qml/main.qml"));
 
-    if (engine.rootObjects().isEmpty())
+    if (engine.rootObjects().isEmpty()) {
+        qWarning() << "Empty root object!";
         return -1;
+    }
 
     return a.exec();
 }
