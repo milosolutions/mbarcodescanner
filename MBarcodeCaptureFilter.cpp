@@ -26,6 +26,7 @@ SOFTWARE.
 #include <QtConcurrentRun>
 
 #include "QZXing.h"
+#include <QtGlobal>
 
 #ifndef Q_OS_ANDROID
 #   include "MImageConverters.h"
@@ -112,9 +113,10 @@ BarcodeCaptureFilterRunnable::BarcodeCaptureFilterRunnable(BarcodeCaptureFilter 
 
 #ifdef DRAW_REGION
     QObject::connect(m_qzxing, &QZXing::decodingFinished,
-                     m_filter, &BarcodeCaptureFilter::processDecodingFinished);
-    QObject::connect(m_qzxing, &QZXing::tagFoundAdvanced,
-                     m_filter, &BarcodeCaptureFilter::processTagFoundAdvanced);
+               m_filter, &BarcodeCaptureFilter::processDecodingFinished);
+    QObject::connect(m_qzxing, QOverload<const QString &, const QString &,
+               const QString &, const QRectF &>::of(&QZXing::tagFoundAdvanced),
+               m_filter, &BarcodeCaptureFilter::processTagFoundAdvanced);
 #else
     QObject::connect(m_qzxing, &QZXing::tagFound,
                      m_filter, &BarcodeCaptureFilter::tagFound);
