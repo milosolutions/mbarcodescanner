@@ -38,20 +38,8 @@ MBarcodeScanner may be used in one of two configurations:
 ## Barcode scanning
 
 To use just barcode scanning (**configuration 1**) you should do following:
-1. Build QZXing library on target platform (see \ref how_to_build ([online version](https://docs.milosolutions.com/milo-code-db/mbarcodescanner/how_to_build.html))). Also you can use prebuilt [QZXing](https://seafile.milosolutions.com/d/248e22bd10/) library and headers.
-2. Specify paths to headers and libraries in *.pro file.
-```
-	INCLUDEPATH += # path to qzxing headers
-	LIBS += # path to qzxing library
-	ANDROID_EXTRA_LIBS = # path to qzxing library (with file name)
-```
-3. Compile and enjoy.
-
-## Barcode scanning with region detection
-
-To use barcode scanning with region detection (**configuration 2**) you should do following:
-1. Apply qzxing.patch and build QZXing library on target platform (see \ref how_to_build). Also you can use prebuilt [QZXing_patched](https://seafile.milosolutions.com/d/e53be4943e/) libraries and headers.
-2. Activate **draw_region** configuration (uncomment #CONFIG += draw_region).
+1. Build QZXing library on target platform (see \ref how_to_build ([online version](https://docs.milosolutions.com/milo-code-db/mbarcodescanner/how_to_build.html))) Also you can use prebuilt [QZXing](https://seafile.milosolutions.com/#group/4/lib/abc2c8d4-7551-49f6-9f67-6d4e271c0cd1/3rdparty/QZXing3.0) library and headers.
+2. If you want it:  Activate **draw_region** configuration (uncomment #CONFIG += draw_region).
 3. Specify paths to headers and libraries in *.pro file.
 ```
 	INCLUDEPATH += # path to qzxing headers
@@ -59,6 +47,7 @@ To use barcode scanning with region detection (**configuration 2**) you should d
 	ANDROID_EXTRA_LIBS = # path to qzxing library (with file name)
 ```
 4. Compile and enjoy.
+
 
 You can find some tricks with camera (see \ref camera_tricks ([online version](https://docs.milosolutions.com/milo-code-db/mbarcodescanner/camera_tricks.html))).
 
