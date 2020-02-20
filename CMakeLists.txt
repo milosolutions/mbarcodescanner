@@ -10,7 +10,7 @@ find_package(Qt5 COMPONENTS REQUIRED Core)
 set(SOURCES MImageConverters.h MImageConverters.cpp MBarcodeCaptureFilter.h
   MBarcodeCaptureFilter.cpp)
 
-set(OTHER_FILES README.md barcode_scanning.doxyfile
+set(OTHER_FILES README.md mbarcodescanner.doxyfile
   camera_tricks.md how_to_build.md)
 
 add_library(mbarcodescanner OBJECT ${SOURCES} ${OTHER_FILES})

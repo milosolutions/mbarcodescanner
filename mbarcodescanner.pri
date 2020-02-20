@@ -10,5 +10,5 @@ SOURCES += \
     $$PWD/MImageConverters.cpp \
     $$PWD/MBarcodeCaptureFilter.cpp
 
-OTHER_FILES += $$PWD/README.md $$PWD/barcode_scanning.doxyfile \
+OTHER_FILES += $$PWD/README.md $$PWD/mbarcodescanner.doxyfile \
                $$PWD/camera_tricks.md $$PWD/how_to_build.md
