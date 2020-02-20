@@ -5,7 +5,7 @@ project(mbarcodescanner
   LANGUAGES CXX
 )
 
-find_package(Qt5 COMPONENTS REQUIRED Core)
+find_package(Qt5 COMPONENTS REQUIRED Core Concurrent Multimedia)
 
 set(SOURCES MImageConverters.h MImageConverters.cpp MBarcodeCaptureFilter.h
   MBarcodeCaptureFilter.cpp)
@@ -23,7 +23,12 @@ target_include_directories(mbarcodescanner
 
 target_link_libraries(mbarcodescanner
   Qt5::Core
+  Qt5::Concurrent
+  Qt5::Multimedia
 )
 
 message("MBarCodeScanner: missing unit test!")
 #add_subdirectory(tst_mbarcodescanner)
+
+# See https://github.com/ftylitak/qzxing/blob/master/src/CMakeLists.txt
+message("MBarCodeScanner: cmake support incomplete!")
