@@ -1,3 +1,8 @@
+if (POLICY CMP0048)
+  cmake_policy(SET CMP0048 NEW)
+endif ()
+
+cmake_minimum_required(VERSION 3.5)
 
 project(mbarcodescanner
   VERSION 0.0.1
@@ -6,6 +11,7 @@ project(mbarcodescanner
 )
 
 find_package(Qt5 COMPONENTS REQUIRED Core Concurrent Multimedia)
+find_package(qzxing)
 
 set(SOURCES MImageConverters.h MImageConverters.cpp MBarcodeCaptureFilter.h
   MBarcodeCaptureFilter.cpp)
@@ -13,11 +19,10 @@ set(SOURCES MImageConverters.h MImageConverters.cpp MBarcodeCaptureFilter.h
 set(OTHER_FILES README.md mbarcodescanner.doxyfile
   camera_tricks.md how_to_build.md)
 
-add_library(mbarcodescanner OBJECT ${SOURCES} ${OTHER_FILES})
+add_library(mbarcodescanner STATIC ${SOURCES} ${OTHER_FILES})
 
 target_include_directories(mbarcodescanner
   PUBLIC
-  $<INSTALL_INTERFACE:include>
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
 )
 
